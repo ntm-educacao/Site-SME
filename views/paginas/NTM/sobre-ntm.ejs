@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+
+<head>
+    <%- include("../../head") %>
+    <title>Sobre o NTM - Secretaria Municipal de Educação</title>
+</head>
+
+<body class="h-full bg-slate-50">
+    <div id="app" class="w-full h-full overflow-x-hidden overflow-y-auto">
+        <%- include("../../componentes/pagina-inicial/top-bar") %>
+
+        <header id="main-header" class="bg-blue-800 shadow-md sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 bg-blue-800">
+                <div class="flex items-center justify-between py-4 bg-blue-800">
+                    <%- include("../../componentes/pagina-inicial/header-principal/logo") %>
+                    <nav class="hidden lg:flex items-center gap-1" id="main-nav">
+                        <%- include("../../componentes/pagina-inicial/header-principal/botao-inicio") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-institucional") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-ensino") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-unidades") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-servicos") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-NTM") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-sistemas") %>
+                    </nav>
+                    <%- include("../../componentes/pagina-inicial/header-principal/mobile-menu-button") %>
+                </div>
+            </div>
+            <%- include("../../componentes/pagina-inicial/mobile-menu") %>
+        </header>
+
+        <%- include("../../componentes/NTM/sobre-NTM/sobre") %>
+
+        <main class="max-w-7xl mx-auto px-4 py-12">
+
+            <section class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-microchip text-blue-700"></i>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold text-slate-800">O que é o NTM?</h2>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 text-justify">
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        O <strong class="text-slate-800">Núcleo de Tecnologia Educacional Municipal (NTM)</strong> foi implantado por meio do ofício nº 273/2010 pela DITEC/SEED/MEC, passando a funcionar em 2011, no edifício Joaquim da Silveira Borges, no município de Mossoró/RN, tendo com finalidade <strong class="text-slate-800">sensibilizar e motivar os profissionais da educação</strong> para a incorporação das TDIC nas atividades didático-pedagógicas, apoiando o planejamento das escolas e capacitando professores-multiplicadores e equipes de suporte técnico por meio de cursos e assessoramento pedagógico ao processo de ensino e aprendizagem.
+                    </p>
+                    <br>
+                    <p class="text-slate-600 leading-relaxed text-base">Desenvolve suas formações com base na BNCC – Computação, estruturando suas práticas a partir dos três eixos que a delineiam: Pensamento Computacional, Cultura Digital e Mundo Digital, garantindo que as ações formativas estejam alinhadas às competências e habilidades previstas para a educação básica. Além disso, segue as diretrizes do Programa de Inovação Educação Conectada (PIEC), desenvolvido tendo como base as quatro dimensões: Visão, Formação, Recursos educacionais digitais e Infraestrutura.</p>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-network-wired text-blue-700"></i>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold text-slate-800">As 4 Dimensões do Programa Educação Conectada</h2>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-lightbulb text-blue-700 text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">Visão</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed text-justify">Projeto Aluno-Monitor: protagonismo e tecnologia; Programas de Formação continuada - PROINFO; Projeto: Gestão e Tecnologia</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-chalkboard-user text-green-700 text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">Competências</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed text-justify">Criação de cursos e programas de capacitação para alunos e professores com foco na transformação através do ensino.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-book-open text-purple-700 text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">Conteúdos e Recursos Digitais</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed text-justify">Produção: Coletânea de Softwares educativos</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-wifi text-amber-700 text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">Infraestrutura</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed text-justify">Aquisições de tablets e mesas digitais</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include("../../componentes/pagina-inicial/footer") %>
+    </div>
+    <script src="/scripts/pagina-inicial/scripts.js"></script>
+</body>
+
+</html>

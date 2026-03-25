@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+
+<head>
+    <%- include("../../head") %>
+    <title>Formação Continuada - Secretaria Municipal de Educação</title>
+</head>
+
+<body class="h-full bg-slate-50">
+    <div id="app" class="w-full h-full overflow-x-hidden overflow-y-auto">
+        <%- include("../../componentes/pagina-inicial/top-bar") %>
+
+        <header id="main-header" class="bg-blue-800 shadow-md sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 bg-blue-800">
+                <div class="flex items-center justify-between py-4 bg-blue-800">
+                    <%- include("../../componentes/pagina-inicial/header-principal/logo") %>
+                    <nav class="hidden lg:flex items-center gap-1" id="main-nav">
+                        <%- include("../../componentes/pagina-inicial/header-principal/botao-inicio") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-institucional") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-ensino") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-unidades") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-servicos") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-NTM") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-sistemas") %>
+                    </nav>
+                    <%- include("../../componentes/pagina-inicial/header-principal/mobile-menu-button") %>
+                </div>
+            </div>
+            <%- include("../../componentes/pagina-inicial/mobile-menu") %>
+        </header>
+
+        <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex items-center gap-4 mb-4">
+                    <a href="/" class="text-blue-200 hover:text-white text-sm transition-colors flex items-center gap-1">
+                        <i class="fas fa-house"></i> Início
+                    </a>
+                    <i class="fas fa-chevron-right text-blue-300 text-xs"></i>
+                    <span class="text-blue-200 text-sm">NTM</span>
+                    <i class="fas fa-chevron-right text-blue-300 text-xs"></i>
+                    <span class="text-white text-sm font-medium">Formação Continuada</span>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div class="w-16 h-16 rounded-2xl overflow-hidden flex-shrink-0 bg-yellow-100 flex items-center justify-center">
+                        <i class="fa-solid fa-chalkboard-user text-3xl" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl lg:text-4xl font-heading font-bold leading-tight">
+                            Formação Continuada
+                        </h1>
+                        <p class="text-blue-200 mt-2 text-lg">Excelência e Inovação</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="max-w-7xl mx-auto px-4 py-12">
+
+            <section class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-calendar-check text-blue-700"></i>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold text-slate-800">AÇÕES PLANEJADAS PARA 2026</h2>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+
+                    <ul class="space-y-3 text-slate-600 text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-circle-dot text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>II Simpósio de Educação Digital da Educação Básica (Tema a ser definido - 2º semestre);</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-circle-dot text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>Elaboração do Plano Municipal de Educação Digital do NTM;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-circle-dot text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>Participação no III Workshop de Educação Digital e Inovação Pedagógica;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-circle-dot text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>Suporte tecnológico nos eventos realizados pela SME;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-circle-dot text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>Desenvolvimento de sites e estrutura de dados para Programas e Projetos da SME e do NTM;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-circle-dot text-blue-500 mt-1 flex-shrink-0"></i>
+                            <span>Workshop de troca de experiências sobre as práticas desenvolvidas pelos docentes na Educação Digital (1º semestre).</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 border-t border-slate-100 pt-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-video text-red-600 text-sm"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-slate-800 text-lg">Lives</h3>
+                        </div>
+                        <ul class="space-y-3 text-slate-600 text-base">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Comunicação assertiva na elaboração e edição de vídeos nas redes sociais (Estilren Lacerda - 26/03/2026 - 19h - YouTube);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>A escola na era da IA generativa (Profa. Ma. Jéssica Neiva de Figueiredo Leite Araújo - UERN - 16/04/2026 - 19h - YouTube).</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 border-t border-slate-100 pt-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-person-chalkboard text-green-600 text-sm"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-slate-800 text-lg">Palestras <span class="text-sm text-slate-400 font-normal">(Escolha a ser definida pelas escolas)</span></h3>
+                        </div>
+                        <ul class="space-y-3 text-slate-600 text-base">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Uso do celular na sala de aula: permissão ou proibição?</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Cyberbullying: quando a brincadeira machuca.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 border-t border-slate-100 pt-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-screwdriver-wrench text-purple-600 text-sm"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-slate-800 text-lg">Oficinas <span class="text-sm text-slate-400 font-normal">(Temas a serem definidos junto com as escolas)</span></h3>
+                        </div>
+                        <ul class="space-y-3 text-slate-600 text-base">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "O uso de ferramentas digitais para aulas online" (4h – Presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Curadoria de Recursos Educacionais Digitais" (4h – presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Desvendando a BNCC Computação" (4h – presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Saberes digitais docentes e o autodiagnóstico" (4h - presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Recursos digitais para práticas pedagógicas plugadas" (4h - presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "IA como alternativa para a produção de práticas educativas alinhadas à BNCC Computação" (4h – presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Ferramentas digitais para avaliar de forma interativa" (4h – presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Produção de atividades a partir do software educacional Luz do Saber" (4h – presencial ou online);</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle text-slate-300 mt-1.5 text-xs flex-shrink-0"></i>
+                                <span>Oficina "Uso de dados para avaliação da aprendizagem" (4h – presencial ou online).</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <%- include("../../componentes/pagina-inicial/footer") %>
+    </div>
+    <script src="/scripts/pagina-inicial/scripts.js"></script>
+</body>
+
+</html>

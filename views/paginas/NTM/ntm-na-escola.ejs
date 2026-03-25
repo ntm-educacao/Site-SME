@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+
+<head>
+    <%- include("../../head") %>
+    <title>O NTM nas Escolas - Secretaria Municipal de Educação</title>
+</head>
+
+<body class="h-full bg-slate-50">
+    <div id="app" class="w-full h-full overflow-x-hidden overflow-y-auto">
+        <%- include("../../componentes/pagina-inicial/top-bar") %>
+
+        <header id="main-header" class="bg-blue-800 shadow-md sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 bg-blue-800">
+                <div class="flex items-center justify-between py-4 bg-blue-800">
+                    <%- include("../../componentes/pagina-inicial/header-principal/logo") %>
+                    <nav class="hidden lg:flex items-center gap-1" id="main-nav">
+                        <%- include("../../componentes/pagina-inicial/header-principal/botao-inicio") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-institucional") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-ensino") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-unidades") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-servicos") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-NTM") %>
+                        <%- include("../../componentes/pagina-inicial/header-principal/nav-item-sistemas") %>
+                    </nav>
+                    <%- include("../../componentes/pagina-inicial/header-principal/mobile-menu-button") %>
+                </div>
+            </div>
+            <%- include("../../componentes/pagina-inicial/mobile-menu") %>
+        </header>
+
+        <%- include("../../componentes/NTM/ntm-na-escola/hero") %>
+
+        <main class="max-w-7xl mx-auto px-4 py-12">
+
+            <section class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-school text-blue-700"></i>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold text-slate-800">O NTM nas Escolas</h2>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                    <p class="text-slate-600 leading-relaxed text-base mb-8">
+                        O NTM pode ir a sua escola! A partir desta página, você pode:
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-blue-100 rounded-xl p-6 flex flex-col gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-calendar-check text-white"></i>
+                                </div>
+                                <h3 class="font-heading font-bold text-slate-800 text-lg">Formação Pedagógica</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Caso você detecte a necessidade de oficina ou mesmo uma reunião entre nós e sua equipe acerca da temática TICs, basta preencher o formulário e aguardar o agendamento, através do link abaixo:
+                            </p>
+                            <a href="#" class="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-5 py-3 rounded-lg transition-colors self-start">
+                                <i class="fas fa-file-pen"></i> Solicitar Visita Pedagógica
+                            </a>
+                        </div>
+                        <div class="bg-purple-100 rounded-xl p-6 flex flex-col gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-purple-700 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-screwdriver-wrench text-white"></i>
+                                </div>
+                                <h3 class="font-heading font-bold text-slate-800 text-lg">Serviços Técnicos</h3>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                No caso de serviços técnicos de informática relativos ao laboratório da sua escola, clique no link abaixo e preencha o cadastro de solicitação. O agendamento será confirmado em seguida por nossa coordenação.
+                            </p>
+                            <a href="https://glpi.mossoro.rn.gov.br/index.php?noAUTO=1" target="_blank" class="inline-flex items-center gap-2 bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold px-5 py-3 rounded-lg transition-colors self-start">
+                                <i class="fas fa-tools"></i> Solicitar Serviço Técnico
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-envelope text-blue-700"></i>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold text-slate-800">Contato</h2>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                    <p class="text-slate-600 leading-relaxed text-base mb-6">
+                        Nossa equipe tem o maior prazer em lhe atender. Sinta-se à vontade para entrar em contato!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex items-center gap-3 bg-slate-50 rounded-xl px-5 py-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-700"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium mb-0.5">E-mail</div>
+                                <a href="mailto:ntm@educacao.prefeiturademossoro.com.br" class="text-blue-700 hover:text-blue-900 font-semibold text-sm transition-colors">
+                                    ntm@educacao.prefeiturademossoro.com.br
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 rounded-xl px-5 py-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-green-700"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium mb-0.5">Telefone</div>
+                                <a href="https://wa.me/5584996252471" target="_blank" class="text-green-700 hover:text-green-900 font-semibold text-sm transition-colors">
+                                    (84) 99625-2471 <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include("../../componentes/pagina-inicial/footer") %>
+    </div>
+    <script src="/scripts/pagina-inicial/scripts.js"></script>
+</body>
+
+</html>
