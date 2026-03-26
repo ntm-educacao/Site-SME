@@ -74,10 +74,10 @@
                 title: 'Institucional',
                 icon: 'fas fa-building',
                 items: [
-                    { icon: 'fas fa-landmark', label: 'Sobre a Secretaria', href: '#sobre' },
-                    { icon: 'fas fa-user', label: 'Secretário(a)', href: '#secretario' },
-                    { icon: 'fas fa-project-diagram', label: 'Organograma', href: '#organograma' },
-                    { icon: 'fas fa-map-marker-alt', label: 'Contato e Localização', href: '#contato' }
+                    { icon: 'fas fa-landmark', label: 'Sobre a Secretaria', href: '/institucional/sobre' },
+                    { icon: 'fas fa-user', label: 'Secretário(a)', href: '/institucional/secretario' },
+                    { icon: 'fas fa-project-diagram', label: 'Organograma', href: '/institucional/organograma' },
+                    { icon: 'fas fa-map-marker-alt', label: 'Contato e Localização', href: 'https://www.google.com/maps/d/edit?mid=1KAtP0USyNKdlSe9M-DY87ZsSDToGJvQ&usp=sharing' }
                 ]
             },
             {
@@ -124,11 +124,10 @@
                 icon: 'fas fa-laptop-code',
                 items: [
                     { icon: 'fas fa-circle-info', label: 'Sobre o NTM', href: '/ntm/sobre' },
-                    { icon: 'fas fa-users-gear', label: 'Nossa Equipe', href: '#contratos' },
+                    { icon: 'fas fa-users-gear', label: 'Nossa Equipe', href: '/NTM/equipe' },
                     { icon: 'fas fa-computer', label: 'O NTM nas Escolas', href: '/NTM/na-escola' },
-                    { icon: 'fas fa-file-invoice', label: 'Prestação de Contas', href: '#prestacao' },
-                    { icon: 'fas fa-coins', label: 'FUNDEB', href: '#fundeb' },
-                    { icon: 'fas fa-chart-line', label: 'Indicadores', href: '#indicadores' }
+                    { icon: 'fas fa-file-invoice', label: 'Formação Continuada', href: '/NTM/formacao-continuada' },
+                    { icon: 'fas fa-coins', label: 'Simpósio', href: 'https://jornadapedagogicapmm.my.canva.site/simposio' }
                 ]
             },
             {
@@ -137,7 +136,8 @@
                 items: [
                     { icon: 'fas fa-landmark', label: 'SIGEduc', href: 'https://sigeduc.rn.gov.br/sigeduc/public/home.jsf', target: '_blank' },
                     { icon: 'fas fa-user', label: 'Moodle', href: 'https://moodle.com/pt-br/', target: '_blank' },
-                    { icon: 'fas fa-project-diagram', label: 'SAEM', href: 'https://saem.sme.mossoro.rn.gov.br/', target: '_blank' }
+                    { icon: 'fas fa-project-diagram', label: 'SAEM', href: 'https://saem.sme.mossoro.rn.gov.br/', target: '_blank' },
+                    { icon: 'fas fa-project-diagram', label: 'SEI', href: 'https://sip.mossoro.rn.gov.br/sip/login.php?sigla_orgao_sistema=PMM&sigla_sistema=SEI&infra_url=L3NlaS8=', target: '_blank' }
                 ]
             }
         ];
